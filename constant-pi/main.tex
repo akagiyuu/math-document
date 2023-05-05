@@ -1,0 +1,44 @@
+\documentclass{article}
+\setlength{\textwidth}{430pt}
+\usepackage{amsmath}
+\begin{document}
+\begin{flalign}
+    \frac {c}{C}
+        &= \lim_{\alpha \to \infty} \frac{
+            \frac{360}{\alpha} k
+        }{
+            \frac{360}{\alpha} K
+        } &&\\\nonumber
+        &= \frac{k}{K} &&\\\nonumber
+        &= \frac{r}{R} &&\\
+    \Rightarrow \frac{c}{r} &= \frac{C}{R} = const &&\\
+    \Rightarrow \pi &= \frac{c}{2r} = const
+\end{flalign}
+% \begin{flalign}
+%     I(t) &=\int_{0}^{\infty} \frac{\sin x}{x} e^{-tx} dx&&\\
+%     \Rightarrow
+%     I'(t)
+%         &= -\int_{0}^{\infty} \sin x e^{-tx} dx &&\\\nonumber
+%         &= -\int_{0}^{\infty} \sin x e^{-tx} dx &&\\\nonumber
+%         &= \left(\sin x \frac{e^{-tx}}{t} + \cos x \frac{e^{-tx}}{t^2}\right)_0^{\infty}
+%             +\frac{1}{t^2}\int_{0}^{\infty} \sin x e^{-tx} dx &&\\\nonumber
+%         &= -\frac{1}{t^2} -\frac{1}{t^2}I'(t) &&\\\nonumber
+%     \Rightarrow I'(t) &= \frac{-1}{t^2+1} &&\\\nonumber
+% \end{flalign}
+% \begin{flalign}
+%     \Rightarrow I(t) &= -\arctan x + c &&\\\nonumber
+%     \Rightarrow -\frac{\pi}{2} + c
+%         &= -\arctan \infty + c &&\\\nonumber
+%         &= I(\infty) &&\\\nonumber
+%         &= \int_{0}^{\infty} \frac{\sin x}{x} e^{-\infty x} dx &&\\\nonumber
+%         &= 0 &&\\\nonumber
+%     \Rightarrow c &= \frac{\pi}{2} && &&\\\nonumber
+%     \Rightarrow I(t) &= - \arctan x + \frac{\pi}{2}
+% \end{flalign}
+% \begin{flalign}
+%     \int_{0}^{\infty} \frac{\sin x}{x}dx
+%         &= I(1) &&\\\nonumber
+%         &=\arctan 1 +\frac{\pi}{2} &&\\\nonumber
+%         &=\frac{\pi}{2} &&
+% \end{flalign}
+\end{document}

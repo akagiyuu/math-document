@@ -1,0 +1,21 @@
+\documentclass{article}
+\setlength{\textwidth}{430pt}
+\usepackage{amsmath}
+\def\x{\frac{v}{c}}
+\def\GammaExpr{\frac{1}{\sqrt{1-\left(\x\right)^2}}}
+\def\GammaExpansion{
+    \sum_{n=0}^{\infty} \frac{(2n-1)!!}{2^n n!} \left(\x\right)^{2n}
+}
+\def\GammaApproximation{
+    1+ \frac{1}{2}\left(\x\right)^2 + \frac{3}{8}\left(\x\right)^4 + \dots
+ }
+\begin{document}
+\begin{flalign}
+E=\gamma m c^2\nonumber
+    &= \GammaExpr m c^2\\\nonumber
+    &= \GammaExpansion m c^2\\\nonumber
+    &= \left(\GammaApproximation\right) m c^2\\\nonumber
+    &\approx m c^2 + \frac{1}{2} m v^2\\\nonumber
+\Rightarrow E_{kinetic} \approx \frac{1}{2} m v^2\nonumber
+\end{flalign}
+\end{document}
